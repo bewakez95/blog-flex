@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+}
+.global-msg {
+  background: blue;
+  padding: 1rem 0;
+  color: rgb(255, 255, 255);
+}
+/* apply flex to only first div */
+.global-msg > div,
+.top-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* works to get the 10% gap in left and right */
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+/* top nav */
+.nav-bar {
+  background: rgb(89, 224, 226);
+}
+
+.menu > ul {
+  list-style-type: none;
+  display: flex;
+}
+.menu ul li {
+  margin-left: 1.2rem;
+}
+.menu ul li:hover {
+  cursor: pointer;
+  color: rgb(221, 55, 39);
+}
+/* hero section */
+.hero {
+  background: url("https://images.unsplash.com/photo-1476977251893-330046eb5ec8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80")
+    no-repeat center;
+  background-size: cover;
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-content {
+  background: black;
+  color: white;
+  width: 450px;
+  opacity: 70%;
+  padding: 1rem 2rem;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.main {
+  display: flex;
+  margin-top: 32px;
+}
+.main-content {
+  /* background-color: rgb(32, 41, 128); */
+  width: 66%;
+  margin-right: 1rem;
+}
+.side-links {
+  width: 34%;
+}
+article {
+  display: flex;
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.art-img {
+  margin-right: 20px;
+  width: 250px;
+}
+.title {
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+.btn-box {
+  display: flex;
+  justify-content: flex-end;
+}
+.btn {
+  padding: 8px 15px;
+  background: orangered;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* sidel link  */
+
+.read-by-country,
+.read-by-date {
+  background-color: bisque;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-top: 3.5rem;
+}
+.read-by-date {
+  background-color: rgb(48, 140, 221);
+}
+/* Recc section */
+.recc {
+  background: rgb(140, 140, 242);
+  padding: 3rem 0;
+}
+.card-list {
+  border-radius: 5rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.card {
+  background: white;
+  box-shadow: -5px 5px 15px 5px grey;
+  padding-bottom: 2rem;
+  border-radius: 5rem 1rem 1rem 1rem;
+  width: 250px;
+  flex-grow: 1;
+}
+.btn-card {
+  width: 100%;
+}
+
+.card-list .card img {
+  border-radius: 5rem 1rem 0 0;
+}
+
+/* subscribe section */
+.subs {
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* footer */
+.footer {
+  background: black;
+  color: beige;
+  padding: 30px;
+  text-align: center;
+}
